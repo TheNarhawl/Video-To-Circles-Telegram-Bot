@@ -12,7 +12,6 @@ config({ path: './.env' });
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Устанавливаем путь к ffmpeg
 ffmpeg.setFfmpegPath(ffmpegPath);
 
 const bot = new Telegraf(process.env.BOT_TOKEN, {});
@@ -44,7 +43,6 @@ bot.command('help', async (ctx) => {
 
 });
 
-// Обработка получения видео
 bot.on('video', async (ctx) => {
     await ctx.react('🍌');
     let statusMessage;
