@@ -153,7 +153,6 @@ bot.on('video', async (ctx) => {
           }
       );
   
-    
       await ctx.replyWithVideoNote({ source: outputPath }, {
         reply_to_message_id: ctx.message.message_id,
       });
