@@ -35,7 +35,7 @@ bot.command('start', async (ctx) => {
 bot.command('help', async (ctx) => {
     await ctx.react('🍌');
     await ctx.reply(
-        '📧 <b>Связь с автором:</b> @Narhawl\n\n🖊 <b>Исходный код бота:</b> <a href="https://github.com/TheNarhawl">GitHub</a>', 
+        '📧 <b>Связь с автором:</b> @Narhawl\n\n🖊 <b>Исходный код бота:</b> <a href="https://github.com/TheNarhawl/Video-To-Circles-Telegram-Bot">GitHub</a>', 
         {
             parse_mode: "HTML",
             disable_web_page_preview: true
@@ -116,7 +116,7 @@ bot.on('video', async (ctx) => {
                 ctx.chat.id,
                 statusMessage.message_id,
                 null,
-                'Видео слишком длинное!\n\n<b>Оно будет обрезано до 60 секунд.</b>',
+                'Видео слишком длинное!\n\n<b>Оно будет обрезано до 60 секунд . . .</b>',
                 {
                     parse_mode: "HTML"
                 }
