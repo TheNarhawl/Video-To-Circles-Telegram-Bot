@@ -1,0 +1,15 @@
+[
+  {
+    "script": "src/bot.js",
+    "name": "Video-To-Circles-Telegram-Bot",
+    "exec_mode": "cluster",
+    "instances": 1,
+    "watch": [
+      "./src/bot.js"
+    ],
+    "ignore_watch": [
+      "./",
+      "node_modules"
+    ]
+  }
+]
