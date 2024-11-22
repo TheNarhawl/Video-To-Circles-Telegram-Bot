@@ -20,6 +20,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.DEPLOY_KEY }}
+        port: ${{ secrets.PORT }}
         source: "."
         target: "/tmp"
 
@@ -29,6 +30,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.DEPLOY_KEY }}
+        port: ${{ secrets.PORT }}
         script: |
           cd /tmp
           docker compose down || true
